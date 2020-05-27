@@ -9,14 +9,13 @@ const Header=()=>{
     return(<div>
             <nav className="navbar navbar-static-top navbar-inverse">
                 <div className="container-fluid">
-                    {/* <div className="navbar-header"> */}
-                        <a className="navbar-brand" href="#"><img src={tlogo} className="img-responsive twsr" alt=""/></a>
-                   
-                    <ul className="nav navbar-nav navbar-right">
-                        <li><Link to="/login"><span className="glyphicon glyphicon-log-in "></span>  Login</Link></li>
-                    </ul>
+                    <div class="navbar-header">
+                            <a className="navbar-brand" href="#"><img src={tlogo} className="img-responsive twsr" alt=""/></a>
                     </div>
-                {/* </div> */}
+                    <ul className="nav navbar-nav  float-vertical-align">
+                        <li><Link to="/login"><span className="glyphicon glyphicon-log-in "> </span> Login </Link></li>
+                    </ul>
+                </div>
             </nav>
         </div>);
 };
