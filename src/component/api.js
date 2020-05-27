@@ -2,7 +2,7 @@
 import { browserHistory } from 'react-router';
 import jwt from 'jwt-decode';
 
-const base_url='http://192.168.1.5:8082';
+const base_url='http://lsm-git-cc-tsm.apps.us-east-1.starter.openshift-online.com:8082';
 // const base_url='http://10.140.247.125:8086';
 
 
