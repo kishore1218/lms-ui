@@ -7,6 +7,7 @@ import GenericComponent from './generic.js';
 import musicbanner1 from '../music_1.jpg';
 import musicbanner2 from '../music_2.jpg';
 import musicbanner3 from '../music_3.jpg';
+import jwt from 'jwt-decode';
 
 class Login extends GenericComponent{
 
@@ -39,7 +40,8 @@ class Login extends GenericComponent{
         }).then(json=>{
             localStorage.setItem('auth-token',json.authToken); 
             localStorage.setItem('refreshtoken',json.refreshToken); 
-
+	    let decoded = jwt(json.authToken);
+            localStorage.setItem('user',decoded.sub); 
 
            // alert(json.authToken);
             this.setState({errormsg:"",isError:false});
