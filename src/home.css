@@ -1,0 +1,25 @@
+.twsr {
+    width:90px;
+    height: 90px;
+}
+
+  .navbar-brand{
+      float: none;
+
+  }
+
+  .homeicon {
+    font-size: 30px;
+    color: aqua;
+  }
+
+  .homelogouticon {
+    font-size: 25px;
+    color: red;
+  }
+
+  .homeprofileicon {
+    font-size: 25px;
+    color: chocolate;
+  }
+
