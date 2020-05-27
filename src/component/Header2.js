@@ -11,6 +11,7 @@ class Header2 extends GenericComponent{
 
     constructor(props){
         super(props);      
+        this.state={username: localStorage.getItem('user')};
      }
 
     logout=()=>{
@@ -46,7 +47,7 @@ class Header2 extends GenericComponent{
                             <div className="pull-right ">
                                 <ul className="nav navbar-nav ">                               
                                
-                                    <li className="nav-item"><a href="#" onClick={this.logout}  className="nav-link" > <span className="fa fa-address-book-o homeprofileicon"></span> </a></li>
+                                    <li className="nav-item"><a href="#" onClick={this.logout}  className="nav-link" > <span className="fa fa-user homeprofileicon">{this.state.username}</span> </a></li>
                                     <li className="nav-item"><a href="#" onClick={this.logout}  className="nav-link" > <span className="fa fa-power-off homelogouticon"></span> </a></li>
                                    
                                 </ul>
